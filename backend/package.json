@@ -12,9 +12,10 @@
     "Node",
     "JS"
   ],
-  "author": "APAEZ",
+  "author": "WBARCIA",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "pg": "^8.12.0",

@@ -1,10 +1,12 @@
-const express = require("express");
+const express = require("express"); //Common JS
 const bookRoutes = require("./routes/bookRoutes");
 const bodyParser = require("body-parser");
 const sequelize = require("./config/database");
+const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 app.use("/api", bookRoutes);
 
 sequelize
